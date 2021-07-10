@@ -1,0 +1,28 @@
+#ifndef LADO_H
+#define LADO_H
+
+#include "cube.h"
+
+
+/*****************************************************************************//**
+ *
+ *
+ *
+ *****************************************************************************/
+
+class _lado
+{
+
+    _cube lado = _cube();
+
+
+public:
+  _lado();
+  void draw_fill(float libertad1, float libertad2, float libertad3, float libertad4, float libertad_puerta, float libertad_ventanilla, float libertad_limpia);
+  void draw_line(float libertad1, float libertad2, float libertad3, float libertad4, float libertad_puerta, float libertad_ventanilla, float libertad_limpia);
+  void draw_point(float libertad1, float libertad2, float libertad3, float libertad4, float libertad_puerta, float libertad_ventanilla, float libertad_limpia);
+  void draw_chess(float libertad1, float libertad2, float libertad3, float libertad4, float libertad_puerta, float libertad_ventanilla, float libertad_limpia);
+};
+
+
+#endif // GRAPADORA_H

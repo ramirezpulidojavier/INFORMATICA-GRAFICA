@@ -1,0 +1,54 @@
+#include "lado.h"
+
+
+_lado::_lado(){
+
+
+
+}
+
+
+void _lado::draw_fill(float libertad1, float libertad2, float libertad3, float libertad4, float libertad_puerta, float libertad_ventanilla, float libertad_limpia){
+
+    glMatrixMode(GL_MODELVIEW);
+
+    glPushMatrix(); //lado
+        glColor3f(1,1,0);
+        glScalef(3,0.875,0.2);
+        lado.draw_fill();
+    glPopMatrix();
+
+
+}
+
+void _lado::draw_chess(float libertad1, float libertad2, float libertad3, float libertad4, float libertad_puerta, float libertad_ventanilla, float libertad_limpia){
+
+    glMatrixMode(GL_MODELVIEW);
+
+    glPushMatrix(); //lado
+        glScalef(2,0.875,0.2);
+        lado.draw_fill();
+    glPopMatrix();
+
+}
+void _lado::draw_point(float libertad1, float libertad2, float libertad3, float libertad4, float libertad_puerta, float libertad_ventanilla, float libertad_limpia){
+
+    glMatrixMode(GL_MODELVIEW);
+
+    glPushMatrix(); //lado
+        glScalef(2,0.875,0.2);
+        lado.draw_point();
+    glPopMatrix();
+
+}
+void _lado::draw_line(float libertad1, float libertad2, float libertad3, float libertad4, float libertad_puerta, float libertad_ventanilla, float libertad_limpia){
+
+    glMatrixMode(GL_MODELVIEW);
+
+    glPushMatrix(); //lado
+        glColor3f(1,1,0);
+        glScalef(2,0.875,0.2);
+        lado.draw_line();
+    glPopMatrix();
+
+}
